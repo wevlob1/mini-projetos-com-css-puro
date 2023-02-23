@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll Down</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family:  'Roboto' , sans-serif;
+            background-color: #212121;
+            overflow-y: hidden;
+        }
+
+        .mouse-btn {
+            margin: 10px auto;
+            width: 40px;
+            height: 80px;
+            border: 3px solid #7a7a7c;
+            border-radius: 20px;
+            display: flex;
+        }
+
+        .mouse-scroll {
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-color: #7a7a7c;
+            border-radius: 50%;
+            margin: auto;
+            animation: ball-scroll 2s linear infinite;
+        }
+        .container-mouse .container-mouse-text{
+            color: #c2c2c2;
+        }
+        @keyframes ball-scroll {
+            0%{
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-mouse">
+        <span class="mouse-btn">
+            <span class="mouse-scroll"></span>
+        </span>
+        <span class="container-mouse-text">Saiba Mais</span>
+    </div>
+</body>
+
+</html>
