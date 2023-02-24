@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    height: 4rem;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+}
+.deactive-navbar{
+    background-color: red;
+    color: white;
+    transition: 1s;
+}
+.active-navbar{
+    transition: 1s;
+    background-color: blue;
+    color: black
+}
+.logo{
+    margin: 0 20px;
+}
+.navbar ul {
+    margin-right: 20px;
+    display: flex;
+    list-style: none;
+}
+.navbar li {
+    margin: 0 10px;
+}
+main{
+    background-color: cyan;
+    height: 200vh;
+}
