@@ -13,16 +13,12 @@
     position: fixed;
     top: 0px;
     z-index: 100;
-}
-.deactive-navbar{
-    background-color: red;
-    color: white;
     transition: 1s;
 }
 .active-navbar{
     transition: 1s;
-    background-color: blue;
-    color: black
+    background-color: rgba(0, 0, 0, 0.699);
+    color: rgb(255, 255, 255)
 }
 .logo{
     margin: 0 20px;
@@ -36,6 +32,5 @@
     margin: 0 10px;
 }
 main{
-    background-color: cyan;
     height: 200vh;
 }

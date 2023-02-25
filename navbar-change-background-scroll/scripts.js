@@ -4,12 +4,11 @@ const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll',() => {
     console.log(window.scrollY)
     if (window.scrollY >= 300 ){
-        navbar.classList.remove('deactive-navbar');
         navbar.classList.add('active-navbar');
     }
     else{
         navbar.classList.remove('active-navbar')
-        navbar.classList.add('deactive-navbar')
+    
     }
 })
 
